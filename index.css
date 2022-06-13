@@ -1,5 +1,6 @@
 html,
 body {
+    font-family: "Open Sans", sans-serif;
     height: 100%;
     font-family: "Times New Roman", serif;
     font-size: 20px;
@@ -10,7 +11,6 @@ h2 {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
     margin: 0;
     max-width: 1200px;
     min-width: 400px;
@@ -20,7 +20,7 @@ body {
     color: black;
 }
 
-.banner {
+#banner {
     background-color:#FF5733;
     width: 100%;
     height: 4.5rem;
@@ -66,18 +66,130 @@ nav h2{
 
 .about-me-container {
     max-width: 900px;
+    max-height: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem auto;
+    margin: 1.5rem auto;
 }
 
 .about-me-text-container {
-    width: 50%;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.about-me-text-container h2 {
+    margin-left: 0.5rem;
+}
+
+.about-me-text-container p {
+    line-height: 1.25rem;
+    margin: 0.5rem;
+    text-align: justify;
+}
+
+.image-container {
+    background-color: #FF5733;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
 }
 
 .portrait {
     width: 300px;
     border-radius: 0.25rem;
     flex-shrink: 0;
+    margin: 0.75rem;
 }
+
+#projects {
+    border: 1px solid red;
+    width: 900px;
+    margin: 1.5rem auto;
+    border-bottom: 1.5rem;
+}
+
+#projects details {
+    cursor: pointer;
+}
+
+.project {
+    border: 1px solid red;
+    margin: 0.5rem 0.5rem;
+}
+
+summary {
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+
+img #merry-conis {
+    width: 300px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .banner {
+        height: fit-content;
+    }
+    
+    nav h2 {
+        display: none;
+    }
+
+    .about-me-text-container {
+        width: 520px;
+        margin-left: 1.5rem;
+    }
+
+
+    .image-container {
+        width: fit-content;
+        height: fit-content;
+        margin-right: 1.5rem;
+    }
+
+    .portrait {
+        width: 120px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        position: fixed;
+        height: fit-content;
+    }
+    
+    nav h2 {
+        display: none;
+    }
+
+    .about-me-container {
+        margin-top: 4rem;
+        flex-direction: column;
+    }
+
+    .image-container {
+        background-color: #FF5733;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+    }
+
+    .about-me-text-container {
+        width: 400px;
+        margin: 0 1.5rem 1.5rem;
+    }
+    
+    .portrait {
+        width: 300px;
+        border-radius: 0.25rem;
+        margin: 0.75rem;
+    }
+}  
+
+
