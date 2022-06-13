@@ -105,37 +105,71 @@ nav h2{
 }
 
 #projects {
-    border: 1px solid red;
     width: 900px;
     margin: 1.5rem auto;
-    border-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 3px solid #FF5733;
+    border-radius: 0.5rem;
 }
 
 #projects details {
     cursor: pointer;
 }
 
-.project {
-    border: 1px solid red;
-    margin: 0.5rem 0.5rem;
+#projects h2 {
+    margin-left: 0.5rem;
 }
 
+.project {
+    margin: 0.5rem 0.5rem;
+    background-color: #FF5733;
+    border-radius: 0.5rem;
+}
 summary {
     list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+    margin: 0.25rem;
 }
 
-img #merry-conis {
-    width: 300px;
+summary h3 {
+    color: white;
+    margin-left: 0.5rem;
+}
+
+details p {
+    color: white;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-image {
+    width: 200px;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#merry-conis {
+    width: 400px;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 
 @media only screen and (max-width: 900px) {
-    .banner {
+    #banner {
+        position: fixed;
         height: fit-content;
     }
     
     nav h2 {
         display: none;
+    }
+
+    .about-me-container {
+        margin-top: 4rem;
     }
 
     .about-me-text-container {
@@ -153,11 +187,15 @@ img #merry-conis {
     .portrait {
         width: 120px;
     }
+
+    #projects {
+        width: 700px;
+    }
 }
 
 
 @media only screen and (max-width: 600px) {
-    .banner {
+    #banner {
         position: fixed;
         height: fit-content;
     }
@@ -189,6 +227,15 @@ img #merry-conis {
         width: 300px;
         border-radius: 0.25rem;
         margin: 0.75rem;
+    }
+
+    #projects {
+        width: 400px;
+    }
+
+    #merry-conis {
+        width: 350px;
+        height: auto;
     }
 }  
 
