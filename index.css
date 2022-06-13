@@ -157,6 +157,29 @@ details p {
     margin-left: 0.5rem;
 }
 
+footer {
+    width: 1200px;
+    height: 400px;
+    background-color: #FF5733;
+}
+
+.message {
+    text-align: center;
+    letter-spacing: 0.5rem;
+}
+
+.message p{
+    color: white;
+}
+
+div .heart {
+    color: purple;
+}
+
+div .classified {
+    font-weight: bold;
+}
+
 
 @media only screen and (max-width: 900px) {
     #banner {
@@ -190,6 +213,10 @@ details p {
 
     #projects {
         width: 700px;
+    }
+
+    footer {
+        width: 100%
     }
 }
 
