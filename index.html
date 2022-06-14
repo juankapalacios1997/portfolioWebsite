@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Juan Carlos Palacios</title>
     <link rel="stylesheet" href="./index.css" />
+    <title>My Portfolio | Juan Carlos Palacios</title>
+    <script>
+        let d = new Date();
+        alert("You are visiting this page on " + d);
+    </script>
 </head>
     <body>
         <div id="banner">            
@@ -49,23 +53,24 @@
                         <img
                         src="./resources/me.jpg"
                         alt="A photo of myself"
-                        class="portrait"
+                        class="portrait" id="portrait-one"
                         />
                         <img
                         src="./resources/me-two.jpg"
                         alt="Another photo of myself"
-                        class="portrait-two"
+                        class="portrait" id="portrait-two"
                         />
                         <img
                         src="./resources/me-three.jpg"
-                        alt="A third photo of myself"
-                        class="portrait-three"
+                        alt="A new photo of myself"
+                        class="portrait" id="portrait-three"
                         />
                         <img
                         src="./resources/me-four.jpg"
                         alt="The last photo of myself"
-                        class="portrait-four"
+                        class="portrait" id="portrait-four"
                         />
+                        <script src="./photo-change.js"></script>
                     </div>
                 </div>
             </section>
