@@ -161,6 +161,23 @@ details p {
     margin-left: 0.5rem;
 }
 
+#skills {
+    max-width: 900px;
+    margin: 1.5rem auto;
+}
+
+#skills h2 {
+    margin-left: 0.5rem;
+}
+
+#skills-container {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 footer {
     width: 1200px;
     height: 100px;
@@ -187,6 +204,26 @@ div .classified {
     font-weight: bold;
 }
 
+#contact {
+    max-width: 900px;
+    max-height: 1200px;
+    margin: 1.5rem auto;
+}
+
+.contact-info, .icons {
+    width: 50%;
+    margin: 1.5rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
 
 @media only screen and (max-width: 900px) {
     #banner {
@@ -228,6 +265,16 @@ div .classified {
     
     .message p{
         font-size: 0.75rem;
+    }
+
+    #skills {
+        width: 700px;
+    }
+
+    #contact {
+        width: 700px;
+        margin-top: 4rem;
+        text-align: center;
     }
 }
 
@@ -278,6 +325,16 @@ div .classified {
 
     .message p{
         line-height: 1.5rem;
+    }
+
+    #skills {
+        width: 400px;
+    }
+
+    #contact {
+        width: 400px;
+        margin-top: 4rem;
+        text-align: center;
     }
 }
 
